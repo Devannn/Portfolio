@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devan's Portfolio</title>
+
+    <!-- CSS & Boostrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Rubik Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="main-nav"
+        class="navbar navbar-expand-lg navbar-dark bg-transparent text-uppercase font-weight-bold fixed-top">
+        <a class="navbar-brand text-white" href="../homepage.html">DJ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item ml-5">
+                    <a class="nav-link text-white" href="" id="projectLink">Side Projects</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="project8.html#toc">CLOSE</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="project-header-2">
+        <div class="text-background-container">
+            <h5>Side Projects</h5>
+        </div>
+        <h1 class="header-text text-uppercase">
+            Side Projects
+        </h1>
+    </div>
+
+    <div class="container text-dark pt-4 pb-4">
+        <!-- Introduction -->
+        <div class="row">
+            <div class="col-12" id="introduction">
+                <h2>Introduction<span></span></h2>
+            </div>
+            <div class="col-12">
+                <p>Here you will find all my side quests. There are projects i did to further show my learning outcomes,
+                    You will also find other things that are not related to the main projects we were tasked with.</p>
+            </div>
+        </div>
+        <!-- Introduction -->
+
+        <!-- PHP Lesson -->
+        <div class="row">
+            <div class="col-12" id="php-lesson">
+                <h2>Introduction to PHP <span>LO2</span></h2>
+            </div>
+            <div class="col-12">
+                <p>
+                    During a lesson of Amir we were tasked to follow a tutorial and make our own CRUD system using PHP.
+                    I added comments to all of the important functions to make it easily transferable.
+                </p>
+                <ul>
+                    <li><a href="https://git.fhict.nl/I531443/introduction-to-php">GitLab Link</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- PHP Lesson -->
+
+        <!-- ThreeJS Lesson -->
+        <div class="row">
+            <div class="col-12" id="threejs-lesson">
+                <h2>Introduction to ThreeJS <span>LO2</span></h2>
+            </div>
+            <div class="col-12">
+                Because after this study i want to work with Laravel i started with a tutorial to get a better
+                understanding about Laravel.
+            </div>
+        </div>
+        <!-- ThreeJS Lesson -->
+
+        <!-- NodeJS Lesson -->
+        <div class="row">
+            <div class="col-12" id="nodejs-lesson">
+                <h2>Introduction to NodeJS <span>LO2</span></h2>
+            </div>
+            <div class="col-12">
+                Amir gave us a workshop about NodeJS. I really wanted to learn NodeJS so this is perfect for me.
+            </div>
+
+            <div class="col-12">
+                <h3>What is NodeJS?</h3>
+                <p>JavaScript thing etc.</p>
+                <p>NodeJS is used to add functionality to a main project.</p>
+                <p>Microservices</p>
+                <p>API</p>
+                <p>Tutorials</p>
+            </div>
+            <div class="col-12" id="one-liner-joke">
+                <h3>One Liner Joke</h3>
+                <p>Amir gave us a little assignment to install a custom package using npm. This package has a fuction to
+                    generate a random one liner joke. In the readme you can see how the function works.</p>
+                <p>I added a readme to the GitLab page to show how the code works and how you can make your own jokes.
+                    You can find the GitLab below
+                </p>
+                <ul>
+                    <li><a href="https://git.fhict.nl/I531443/introduction-to-nodejs">GitLab Link</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- NodeJS Lesson -->
+
+        <!-- Laravel From Scratch -->
+        <div class="row">
+            <div class="col-12" id="laravel-from-scratch">
+                <h2>Laravel From Scratch <span>LO2 & LO5</span></h2>
+            </div>
+            <div class="col-12">
+                <p>Because after this study I want to work with Laravel i started with a tutorial to get a better
+                    understanding about Laravel.</p>
+            </div>
+        </div>
+        <!-- Laravel From Scratch -->
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(window).on("scroll", function () {
+                if ($(document).scrollTop() > 50) {
+                    $("#main-nav").addClass("bg-dark").removeClass("bg-transparent");
+                } else {
+                    $("#main-nav").addClass("bg-transparent").removeClass("bg-dark");
+                }
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

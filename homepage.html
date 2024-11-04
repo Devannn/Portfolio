@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devan's Portfolio</title>
+
+    <!-- CSS & Boostrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Rubik Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent text-uppercase font-weight-bold fixed-top">
+        <a class="navbar-brand text-white" href="homepage.html">DJ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item ml-5">
+                    <a class="nav-link text-white" href="projects/project1.html" id="projectLink">Brand Guidelines -
+                        Vibe Vault</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="aboutme.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="carousel-item1">
+                <a href="projects/project1.html">
+                    <img src="img/projects/vibevault/vibevault-image.png" class="d-block w-100" alt="Slide 1" />
+                </a>
+            </div>
+            <div class="carousel-item" id="carousel-item2">
+                <a href="projects/project2.html">
+                    <img src="img/projects/mediacampaign/figma.png" class="d-block w-100" alt="Slide 2" />
+                </a>
+            </div>
+            <div class="carousel-item" id="carousel-item3">
+                <a href="projects/project3.html">
+                    <img src="img/projects/easteregg/homepage.jpeg" class="d-block w-100" alt="Slide 3" />
+                </a>
+            </div>
+            <div class="carousel-item" id="carousel-item4">
+                <a href="projects/project4.html">
+                    <img src="img/projects/projectx/figma.png" class="d-block w-100" alt="Slide 4" />
+                </a>
+            </div>
+            <div class="carousel-item" id="carousel-item5">
+                <a href="projects/project5.html">
+                    <img src="img/projects/portfolio/figma.png" class="d-block w-100" alt="Slide 5" />
+                </a>
+            </div>
+            <div class="carousel-item" id="carousel-item6">
+                <a href="projects/project6.html">
+                    <img src="img/projects/project6/card.png" class="d-block w-100" alt="Slide 6" />
+                </a>
+            </div>
+            <div class="carousel-item" id="carousel-item7">
+                <a href="projects/project7.html">
+                    <img src="img/projects/project7/card.png" class="d-block w-100" alt="Slide 7" />>
+                </a>
+            </div>
+            <div class="carousel-item" id="carousel-item8">
+                <a href="projects/project8.html">
+                    <img src="img/projects/project8/card.png" class="d-block w-100" alt="Slide 8" />
+                </a>
+            </div>
+            <div class="carousel-item" id="carousel-item9">
+                <a href="projects/project9.html">
+                    <img src="img/projects/project9/card.png" class="d-block w-100" alt="Slide 9" />
+                </a>
+            </div>
+            <div class="carousel-item" id="carousel-item10">
+                <a href="projects/project10.html">
+                    <img src="img/projects/project10/card.png" class="d-block w-100" alt="Slide 10" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Define mapping of carousel item IDs to href links
+            var projectLinks = {
+                "carousel-item1": "projects/project1.html",
+                "carousel-item2": "projects/project2.html",
+                "carousel-item3": "projects/project3.html",
+                "carousel-item4": "projects/project4.html",
+                "carousel-item5": "projects/project5.html",
+                "carousel-item6": "projects/project6.html",
+                "carousel-item7": "projects/project7.html",
+                "carousel-item8": "projects/project8.html",
+                "carousel-item9": "projects/project9.html",
+                "carousel-item10": "projects/project10.html",
+            };
+
+            $("#carousel").on("slid.bs.carousel", function () {
+                var activeItemId = $(".carousel-item.active").attr("id");
+                var projectName = getProjectName(activeItemId);
+                var projectLink = projectLinks[activeItemId];
+                $("#projectLink").text(projectName).attr("href", projectLink);
+            });
+
+            function getProjectName(itemId) {
+                switch (itemId) {
+                    case "carousel-item1":
+                        return "Brand Guidelines - Vibe Vault";
+                    case "carousel-item2":
+                        return "Media Campaign - Fontys";
+                    case "carousel-item3":
+                        return "Easter Egg - Fontys";
+                    case "carousel-item4":
+                        return "Project X";
+                    case "carousel-item5":
+                        return "Devan's Portfolio";
+                    case "carousel-item6":
+                        return "Fontys Future Fest - Fast Forward";
+                    case "carousel-item7":
+                        return "Lost Media - Studio Branding";
+                    case "carousel-item8":
+                        return "Client Project - Fast Fashion";
+                    case "carousel-item9":
+                        return "Passion Project - Fishing Game";
+                    case "carousel-item10":
+                        return "Side Quests";
+                    default:
+                        return "Default Project Name";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

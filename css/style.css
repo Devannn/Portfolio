@@ -1,0 +1,357 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  /* background: #2a2a2a; */
+  color: #fff;
+  cursor: url(../img/icon.png) 15 15, move;
+  
+}
+
+ a:hover {
+  color: var(--primary-color) !important;
+ }
+
+.bg-primary {
+  background-color: #2a2a2a !important;
+}
+
+div span {
+  float: right;
+}
+
+/* Headers Uppercase */
+h1 {
+  font-size: 96px;
+  font-weight: 700 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+}
+
+h2 span {
+  float: right;
+}
+
+/* Headers Uppercase */
+
+.container {
+  max-width: 1240px !important;
+}
+
+.navbar {
+  font-size: 18px;
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3) !important;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
+}
+
+.navbar .dropdown-menu {
+  border: none;
+  border-radius: 0px;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  font-weight: 500;
+}
+
+.bg-transparent.scrolled {
+  background: #2a2a2a !important;
+}
+
+.pt-4 {
+  padding-top: 3rem !important;
+}
+
+/* Index Page */
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.1);
+  background-image: url("../img/water.png");
+  background-size: 150px;
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    /* Start position */
+    background-position: left 0px top 120px;
+  }
+  40% {
+    /* Speed of left to right */
+    background-position: left 600px top 0px;
+  }
+  80% {
+    background-position: left 1800px top -50px;
+  }
+  100% {
+    background-position: left 2400px top 80px;
+  }
+}
+
+/* Index Page */
+
+/* Homepage & About Me Carousel */
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  /* background: center center fixed !important; */
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* Homepage Images */
+#carousel-item1 {
+  background: url("../img/projects/vibevault/vibevault-image.png");
+}
+
+#carousel-item2 {
+  background: url("../img/projects/mediacampaign/figma.png");
+}
+
+#carousel-item3 {
+  background: url("../img/projects/easteregg/homepage.jpeg");
+}
+
+#carousel-item4 {
+  background: url("../img/projects/projectx/figma.png");
+}
+
+#carousel-item5 {
+  background: url("../img/projects/portfolio/figma.png");
+}
+
+/* About Me Images */
+#carousel-item-1 {
+  background: url("../img/vissen/vis1.jpeg");
+}
+
+#carousel-item-2 {
+  background: url("../img/vissen/vis2.jpeg");
+}
+
+#carousel-item-3 {
+  background: url("../img/vissen/vis3.jpeg");
+}
+
+#carousel-item-4 {
+  background: url("../img/vissen/vis4.jpeg");
+}
+
+/* Homepage & About Me Carousel */
+
+/* Projects */
+
+.projects-body {
+  background-color: #fff;
+  color: #2a2a2a;
+}
+
+.projects {
+  background-image: url("../img/image1.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px;
+  border: none;
+  height: 500px;
+}
+
+.projects .card-footer {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px !important;
+}
+
+.project-href {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+/* Custom CSS for card swap on hover with footer */
+.project-hidden-footer {
+  display: none;
+  background-color: #fff;
+  /* Initially hide the second card */
+}
+
+.projects:hover .project-visible-footer {
+  display: none;
+  /* Hide the first card when hovered */
+}
+
+.projects:hover .project-hidden-footer {
+  display: block;
+  background-color: #fff;
+  /* Show the second card when hovered */
+}
+
+.projects {
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #2a2a2a !important;
+}
+
+/* Projects */
+
+.project-header {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.project-header-2 {
+  background-color: #2a2a2a;
+  height: 100vh;
+}
+
+.text-background-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-background-container h5 {
+  font-size: 190px;
+  text-align: center;
+  line-height: 100vh;
+  transform: rotate(-10deg);
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
+
+/* Fixed distance for scroll buttons */
+div[id] {
+  scroll-margin-top: 70px;
+}
+
+/* Projects */
+
+/* Outcomes */
+.header-text {
+  position: absolute;
+  top: 150px;
+  left: 110px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.aboutme-text {
+  position: absolute;
+  width: 85%;
+  top: 250px;
+  left: 110px;
+}
+
+.project-body {
+  background-color: white;
+}
+
+.buttons-container {
+  position: absolute;
+  top: 85%;
+  left: 110px;
+}
+
+/* Outcomes */
+
+/* Outcome 1 */
+
+.outcome-1 {
+  background-image: url("../img/outcomes/outcome1.png");
+}
+
+/* Outcome 1 */
+
+/* Outcome 2 */
+
+.outcome-2 {
+  background-image: url("../img/outcomes/outcome2.png");
+}
+
+/* Outcome 2 */
+
+/* Outcome 3 */
+
+.outcome-3 {
+  background-image: url("../img/outcomes/outcome3.png");
+}
+
+/* Outcome 3 */
+
+/* Outcome 4 */
+
+.outcome-4 {
+  background-image: url("../img/outcomes/outcome4.png");
+}
+
+/* Outcome 4 */
+
+/* Outcome 5 */
+
+.outcome-5 {
+  background-image: url("../img/outcomes/outcome5.png");
+}
+
+/* Outcome 5 */
+
+/* Contact */
+.contact-left {
+  background-color: white !important;
+  color: #2a2a2a !important;
+}
+
+.form-group label {
+  width: 100px;
+}
+
+.contact-right {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+/* Contact */

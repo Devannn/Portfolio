@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <!-- CSS & Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Rubik Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent text-uppercase font-weight-bold fixed-top">
+        <a class="navbar-brand text-white" href="homepage.html">DJ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="aboutme.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contact-header pt-5">
+        <div class=" container pt-5">
+            <div class="row p-5">
+                <div class="col-4 pt-5 pb-5 p-4">
+                    <h3>My Information</h3>
+
+                    <div class="d-flex flex-column">
+                        <div class="p-2">
+                            <span class="bi-geo-alt" style="float: left; margin-right: 20px;"></span>The Netherlands
+                        </div>
+                        <div class="p-2">
+                            <span class="bi-envelope" style=" float: left; margin-right: 20px;"></span><a
+                                href="mailto:devanjanssen@gmail.com">devanjanssen@gmail.com</a>
+                        </div>
+                        <div class=" p-2">
+                            <span class="bi-link-45deg" style=" float: left; margin-right: 20px;"></span><a
+                                href="http://devanjanssen.nl">devanjanssen.nl</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right col-8 bg-white text-dark pt-5 pb-5 p-4">
+                    <section class="contact-section">
+                        <h3>Contact Me</h3>
+                        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                            <input type="hidden" name="access_key" value="2fae86b0-adcc-4acb-bba3-46aace780edb" />
+                            <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                            <input type="hidden" name="from_name" value="Devan's Portfolio" />
+
+                            <div class="form-group-container">
+                                <div class="row d-flex">
+                                    <div class="col-6">
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="name" class="form-label">Name</label>
+                                            <input id="name" name="name" class="form-input rounded"
+                                                placeholder="Your name" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input id="email" name="email" class="form-input rounded"
+                                                placeholder="Your email" type="email" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="phone" class="form-label">Phone</label>
+                                            <input id="phone" name="phone" class="form-input rounded"
+                                                placeholder="+31 6 45677889" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="message" class="form-label">Message</label>
+                                            <textarea class="form-textarea rounded" id="message" name="message"
+                                                placeholder="Your message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="form-submit btn btn-outline-secondary mb-2" type="submit">
+                                <a class="btn text-secondary" role="button">Send Message</a>
+                            </button>
+                        </form>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
