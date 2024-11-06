@@ -21,9 +21,9 @@ body {
   
 }
 
- a:hover {
+a:hover {
   color: var(--primary-color) !important;
- }
+}
 
 .bg-primary {
   background-color: #2a2a2a !important;
@@ -298,48 +298,6 @@ div[id] {
   left: 110px;
 }
 
-/* Outcomes */
-
-/* Outcome 1 */
-
-.outcome-1 {
-  background-image: url("../img/outcomes/outcome1.png");
-}
-
-/* Outcome 1 */
-
-/* Outcome 2 */
-
-.outcome-2 {
-  background-image: url("../img/outcomes/outcome2.png");
-}
-
-/* Outcome 2 */
-
-/* Outcome 3 */
-
-.outcome-3 {
-  background-image: url("../img/outcomes/outcome3.png");
-}
-
-/* Outcome 3 */
-
-/* Outcome 4 */
-
-.outcome-4 {
-  background-image: url("../img/outcomes/outcome4.png");
-}
-
-/* Outcome 4 */
-
-/* Outcome 5 */
-
-.outcome-5 {
-  background-image: url("../img/outcomes/outcome5.png");
-}
-
-/* Outcome 5 */
-
 /* Contact */
 .contact-left {
   background-color: white !important;
@@ -355,3 +313,38 @@ div[id] {
 }
 
 /* Contact */
+
+.project-ul {
+  list-style-type: none;
+  padding-left: 0px;
+  color: white;
+}
+
+.project-ul ul {
+  list-style-type: none;
+}
+
+.project-ul span {
+  padding-left: 100px;
+}
+
+.project-ul a {
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 0px;
+  padding: 10px 20px;
+  margin-bottom: 4px;
+  display:block;
+  width: 100%;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.project-ul a:hover {
+  color: grey !important;
+}
+
+.side-quests-container .row {
+  margin-bottom: 100vh;
+}
