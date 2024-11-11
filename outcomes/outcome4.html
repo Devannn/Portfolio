@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devan's Portfolio</title>
+
+    <!-- CSS & Boostrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Rubik Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="main-nav"
+        class="navbar navbar-expand-lg navbar-dark bg-transparent text-uppercase font-weight-bold fixed-top">
+        <a class="navbar-brand text-white" href="/homepage.html">DJ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item ml-5">
+                    <a class="nav-link text-white" href="" id="projectLink">Learning Outcome 4</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/projects.html">Projects</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Learning Outcomes
+                    </a>
+                    <div class="dropdown-menu text-uppercase" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-uppercase" href="../outcomes/outcome1.html">Outcome 1</a>
+                        <a class="dropdown-item text-uppercase" href="../outcomes/outcome2.html">Outcome 2</a>
+                        <a class="dropdown-item text-uppercase" href="../outcomes/outcome3.html">Outcome 3</a>
+                        <a class="dropdown-item text-uppercase" href="../outcomes/outcome4.html">Outcome 4</a>
+                        <a class="dropdown-item text-uppercase" href="../outcomes/outcome5.html">Outcome 5</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/aboutme.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="project-header-2">
+        <div class="text-background-container">
+            <h5>Outcome 4</h5>
+        </div>
+        <h1 class="header-text text-uppercase">
+            Professional standards
+        </h1>
+    </div>
+
+    <div class="container text-dark pt-4 pb-4">
+        <!-- Table of Contents -->
+        <div class="row">
+            <div class="col-12" id="toc">
+                <h2>Table of Contents<span></span></h2>
+            </div>
+            <div class="col-6">
+                <h2>Fonty Future Fest</h2>
+                <ul class="project-ul text-dark">
+                    <li><a href="/projects/content7.html#introduction">Introduction</a></li>
+                </ul>
+
+                <h2>Lost Media Studios</h2>
+                <ul class="project-ul text-dark">
+                    <li><a href="/projects/content7.html#introduction">Introduction</a></li>
+                </ul>
+
+                <h2>Client Project - Fast Fashion</h2>
+                <ul class="project-ul text-dark">
+                    <li><a href="/projects/content7.html#introduction">Introduction</a></li>
+                </ul>
+
+                <h2>Passion Project - Fishing Game</h2>
+                <ul class="project-ul text-dark">
+                    <li><a href="/projects/content7.html#introduction">Introduction</a></li>
+                </ul>
+
+                <h2>Side Quests</h2>
+                <ul class="project-ul text-dark">
+                    <li><a href="/projects/content7.html#introduction">Introduction</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- Table of Contents -->
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(window).on("scroll", function () {
+                if ($(document).scrollTop() > 50) {
+                    $("#main-nav").addClass("bg-dark").removeClass("bg-transparent");
+                } else {
+                    $("#main-nav").addClass("bg-transparent").removeClass("bg-dark");
+                }
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
