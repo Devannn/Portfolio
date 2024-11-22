@@ -345,6 +345,6 @@ div[id] {
   color: grey !important;
 }
 
-.side-quests-container .row {
-  margin-bottom: 100vh;
+.side-quests-container>.row {
+  margin-bottom: 10vh;
 }
