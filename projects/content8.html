@@ -481,10 +481,46 @@
                 <p>To conclude my testing i have chosen to stick with the wardrobe and make it look more appealing.</p>
             </div>
             <!-- A/B Testing -->
-
-            <!-- Receipt -->
         </div>
+        <!-- Receipt -->
 
+        <!-- Timeline -->
+        <div class="row">
+            <div class="col-12">
+                <h2>Timeline <span>LO1 & LO3</span></h2>
+            </div>
+
+            <div class="col-6" id="timeline-1">
+                <h2>Iteration 1</h2>
+                <p>
+                    I first designed this timeline below. It is based on a timeline where the game cycles trough main
+                    events and secondary events. We all liked this idea because after events have ended screens will be
+                    shown with outcomes and days passed. However the design did not fit with our overal game design.
+                </p>
+                <img src="../img/projects/project8/timeline-1.png" class="img-fluid">
+            </div>
+
+            <div class="col-6" id="timeline-2">
+                <h2>Iteration 2</h2>
+                <p>
+                    Because the first design was not good enough I tried to do a different approach. Here I found out it
+                    might be smart to add dynamic events that turn green when an event is completed. I quickly asked the
+                    target audience and they all liked this. Meaning this is the timeline we will use.
+                </p>
+                <img src="../img/projects/project8/timeline-2.png" class="img-fluid">
+            </div>
+
+            <div class="col-12" id="timeline-3">
+                <h2>Final Iteration</h2>
+                <p>I made a timeline where the user can easily see how many events are completed and how many events are
+                    left. I did this by using a react.map function which checks for how many events are in the json
+                    file. For each event it generates a circle that you can see below. In between each event a line will
+                    be generated to show progress between the events. If the event index is active it will also change
+                    the color to green and show a check to better visualize.</p>
+                <div class="col-12"><img src="../img/projects/project8/timeline-3.png" class="img-fluid"></div>
+            </div>
+        </div>
+        <!-- Timeline -->
     </div>
 
     <script>
