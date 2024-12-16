@@ -345,6 +345,14 @@ div[id] {
   color: grey !important;
 }
 
+.project-ul h3 {
+  color: #2a2a2a;
+}
+
 .side-quests-container>.row {
+  margin-bottom: 10vh;
+}
+
+.outcome-container>.row {
   margin-bottom: 10vh;
 }
