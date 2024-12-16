@@ -458,7 +458,7 @@
             <!-- Iteration 3 -->
 
             <!-- A/B Testing -->
-            <div class="col-12">
+            <div class="col-12" id="receipt-wardrobe-4">
                 <h2>A/B Testing <span>LO4</span></h2>
                 <h5>Questions</h5>
                 <ul>
@@ -482,21 +482,20 @@
             </div>
             <!-- A/B Testing -->
 
-            <div class="col-12 pb-4">
+            <div class="col-12 pb-4" id="receipt-wardrobe-5">
                 <h2>Final Iteration <span>LO1 & LO3</span></h2>
                 <p>Finally I put all the feedback and testing together and made this design you can see in <cite>Figure
-                        9</cite>.
-                    Plamena
-                    added a header on top of the wardrobe.</p>
+                        9</cite>. When hovering over an item more information about the item will be shown. You can also
+                    wear items which I will explain later. Plamena added a header on top of the wardrobe.</p>
                 <img src="../img/projects/project8/wardrobe-1.png" class="img-fluid">
-                <cite>Figure 9 - Devan Janssen</cite>
+                <cite>Figure 9 - Devan & Plamena</cite>
             </div>
         </div>
         <!-- Receipt -->
 
         <!-- Timeline -->
-        <div class="row">
-            <div class="col-12">
+        <div class="row pb-4">
+            <div class="col-12" id="timeline">
                 <h2>Timeline <span>LO1 & LO3</span></h2>
             </div>
 
@@ -538,6 +537,97 @@
             </div>
         </div>
         <!-- Timeline -->
+
+        <!-- Events -->
+        <div class="row">
+            <div class="col-12" id="events">
+                <h2>Events <span>LO2</span></h2>
+            </div>
+            <div class="col-6">
+                <p>We also have different events. Each event has a different image which will be shown as a
+                    card.
+                    When hovering over the card more information about the event will be shown. All events have a
+                    'wear
+                    from closet' and 'buy from store' button. When pressed on the button the gamePhase will be
+                    updated
+                    which I will explain later.</p>
+            </div>
+            <div class="col-6"><img src="../img/projects/project8/event-1.png" class="img-fluid">
+                <cite>Figure 13 - Devan & Matheusz</cite>
+            </div>
+        </div>
+        <!-- Events -->
+
+        <!-- Game Logic -->
+        <div class="row">
+            <div class="col-12" id="game-logic">
+                <h2>Game Logic <span>LO2</span></h2>
+                <p>Here I will explain the game's logic.</p>
+            </div>
+
+            <div class="col-12" id="gamephases">
+                <h3>Game Phases</h3>
+            </div>
+
+            <!-- Game Phase 1 -->
+            <div class="col-6">
+                <h5>gamePhase 1:</h5>
+                <p>When the gamePhase is 1 the event will be shown based on the eventIndex. As explain earlier all
+                    events have buttons that needed functions. You can see these functions in <cite>Figure 14</cite>.
+                    When the user open the wardrobe the wardrobe is shown and the event is hidden. When the user wants
+                    to buy something from the store the gamePhase will be set to 2.</p>
+            </div>
+            <div class="col-6">
+                <img src="../img/projects/project8/gamephase-1.png" class="img-fluid">
+                <cite>Figure 14 - Devan Janssen</cite>
+            </div>
+            <!-- Game Phase 1 -->
+
+            <!-- Game Phase 2 -->
+            <div class="col-6">
+                <h5>gamePhase 2:</h5>
+                <p>When the gamePhase is 2 the store will be shown. Each store has different items based on the
+                    eventIndex. When a item is purchased from the store it will be added to the wardrobe, the outcome
+                    will be set and the
+                    gamePhase will be set to 3. You can see this working in <cite>Figure 15</cite></p>
+            </div>
+            <div class="col-6">
+                <img src="../img/projects/project8/gamephase-2.png" class="img-fluid">
+                <cite>Figure 15 - Devan Janssen</cite>
+            </div>
+            <!-- Game Phase 2 -->
+
+            <!-- Game Phase 3 -->
+            <div class="col-6">
+                <h5>gamePhase 3:</h5>
+                <p>When the gamePhase is 3 the outcome will be shown based on the item purchased. When the user clicks
+                    on the continue button the gamePhase will be set to 4. This can be seen in <cite>Figure 16</cite>
+                </p>
+            </div>
+            <div class="col-6">
+                <img src="../img/projects/project8/gamephase-3.png" class="img-fluid">
+                <cite>Figure 16 - Devan Janssen</cite>
+            </div>
+            <!-- Game Phase 3 -->
+
+            <!-- Game Phase 4 -->
+            <div class="col-6">
+                <h5>gamePhase 4:</h5>
+                <p>When the gamePhase is set to 4 a message will be shown with 'x' amount of days has been passed. This
+                    demonstrated that between each days a different amount of days have been passed to better simulate a
+                    schoolyear. Also after 'x' amount of days has passed the user will get 'x' amount of euros from
+                    their caretakers. When the user clicks on the continue button the gamePhase will be set to 1 again
+                    and the cycles starts over with the next eventIndex (event 2). As shown in <cite>Figure 17</cite>
+                </p>
+            </div>
+            <div class="col-6">
+                <img src="../img/projects/project8/gamephase-4.png" class="img-fluid">
+                <cite>Figure 17 - Devan Janssen</cite>
+            </div>
+            <!-- Game Phase 4 -->
+
+        </div>
+        <!-- Game Logic -->
     </div>
 
     <script>
