@@ -584,6 +584,71 @@
         </div>
         <!-- Store -->
 
+        <!-- Final Game -->
+        <div class="row">
+            <div class="col-12" id="final-game">
+                <h2>Final Game <span>LO1</span></h2>
+            </div>
+            <div class="col-12">
+                <p>We finally put all components together. Below you can see the final product with all components. The
+                    website is fully responsive and works on all devices.</p>
+            </div>
+            <div class="col-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="/vid/second-chance-game.mp4"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Final Game -->
+
+        <!-- Persuasive Design -->
+        <div class="row">
+            <div class="col-12" id="persuasive-design">
+                <h2>Persuasive Design <span>LO1</span></h2>
+            </div>
+            <div class="col-12">
+                <p>We also added a persuasive design to our game. This means that we added a few elements to the game to
+                    make the user want to play the game. Lets start with the first element.</p>
+            </div>
+            <div class="col-12">
+                <h4>Framing</h4>
+                <p>Users often tend to compare various products before making a purchase decision or signing up for
+                    a
+                    service. This is because they want to make a decision that brings them the most value. The
+                    persuasive principle of framing, also thought of as the Goldilocks principle, appealingly
+                    compares
+                    different options. For example, you might have seen various websites display two payment options
+                    side by side to help customers choose the best fit for their situation. We did this in the store so
+                    that the user can compare the items and choose the best fit for their situation.</p>
+            </div>
+            <div class="col-12">
+                <h4>Scarcity</h4>
+                <p>Scarcity is a persuasive principle that encourages users to take action quickly. It works by
+                    creating a sense of urgency and making the user feel that they need to act now to avoid missing out.
+                    We used this by adding "Sources" to items in the store. Meaning some items are only shown once and
+                    there is a possibility that some items break quickly.</p>
+            </div>
+        </div>
+        <!-- Persuasive Design -->
+
+        <!-- Interactive Design -->
+        <div class="row">
+            <div class="col-12" id="interactive-design">
+                <h2>Interactive Design <span>LO1</span></h2>
+            </div>
+            <div class="col-12">
+                <p>Because we made a game we have a lot of interactive elements to make the user want to play the game.
+                    Below you will find a few examples</p>
+            </div>
+            <div class="col-12">
+                <h4>Words (Dimension 1) & Visual Representations (Dimension 2)</h4>
+                <p>We mostly used these two dimension. Because we made a game almost every element & functions is a
+                    visual & text based representation for example the timeline, the store, the wardrobe, the receipt,
+                    etc. All of these elements are used to make the user want to play the game.</p>
+            </div>
+        </div>
+        <!-- Interactive Design -->
+
         <!-- Game Logic -->
         <div class="row">
             <div class="col-12" id="game-logic">
@@ -599,8 +664,10 @@
             <div class="col-6">
                 <h5>gamePhase 1:</h5>
                 <p>When the gamePhase is 1 the event will be shown based on the eventIndex. As explain earlier all
-                    events have buttons that needed functions. You can see these functions in <cite>Figure 15</cite>.
-                    When the user open the wardrobe the wardrobe is shown and the event is hidden. When the user wants
+                    events have buttons that needed functions. You can see these functions in <cite>Figure
+                        15</cite>.
+                    When the user open the wardrobe the wardrobe is shown and the event is hidden. When the user
+                    wants
                     to buy something from the store the gamePhase will be set to 2.</p>
             </div>
             <div class="col-6">
@@ -613,7 +680,8 @@
             <div class="col-6">
                 <h5>gamePhase 2:</h5>
                 <p>When the gamePhase is 2 the store will be shown. Each store has different items based on the
-                    eventIndex. When a item is purchased from the store it will be added to the wardrobe, the outcome
+                    eventIndex. When a item is purchased from the store it will be added to the wardrobe, the
+                    outcome
                     will be set and the
                     gamePhase will be set to 3. You can see this working in <cite>Figure 16</cite>.</p>
             </div>
@@ -626,8 +694,10 @@
             <!-- Game Phase 3 -->
             <div class="col-6">
                 <h5>gamePhase 3:</h5>
-                <p>When the gamePhase is 3 the outcome will be shown based on the item purchased. When the user clicks
-                    on the continue button the gamePhase will be set to 4. This can be seen in <cite>Figure 17</cite>.
+                <p>When the gamePhase is 3 the outcome will be shown based on the item purchased. When the user
+                    clicks
+                    on the continue button the gamePhase will be set to 4. This can be seen in <cite>Figure
+                        17</cite>.
                 </p>
             </div>
             <div class="col-6">
@@ -639,11 +709,15 @@
             <!-- Game Phase 4 -->
             <div class="col-6">
                 <h5>gamePhase 4:</h5>
-                <p>When the gamePhase is set to 4 a message will be shown with 'x' amount of days has been passed. This
-                    demonstrated that between each days a different amount of days have been passed to better simulate a
+                <p>When the gamePhase is set to 4 a message will be shown with 'x' amount of days has been passed.
+                    This
+                    demonstrated that between each days a different amount of days have been passed to better
+                    simulate a
                     schoolyear. Also after 'x' amount of days has passed the user will get 'x' amount of euros from
-                    their Caretakers. When the user clicks on the continue button the gamePhase will be set to 1 again
-                    and the cycles starts over with the next eventIndex (event 2). As shown in <cite>Figure 18</cite>.
+                    their Caretakers. When the user clicks on the continue button the gamePhase will be set to 1
+                    again
+                    and the cycles starts over with the next eventIndex (event 2). As shown in <cite>Figure
+                        18</cite>.
                 </p>
             </div>
             <div class="col-6">
@@ -663,9 +737,12 @@
                 <h2>Upload to Hera <span>LO2</span></h2>
             </div>
             <div class="col-12">
-                <p>To upload our game to Hera I used the 'npm run build' command in the terminal. This command makes a
-                    'dist' folder. The 'dist' folder is a simplified version of our game meaning everything still works
-                    but we only have a single html, js and css file. I then uploaded the 'dist' folder to Hera and the
+                <p>To upload our game to Hera I used the 'npm run build' command in the terminal. This command makes
+                    a
+                    'dist' folder. The 'dist' folder is a simplified version of our game meaning everything still
+                    works
+                    but we only have a single html, js and css file. I then uploaded the 'dist' folder to Hera and
+                    the
                     game was ready to be tested.</p>
             </div>
         </div>
@@ -677,8 +754,10 @@
                 <h2>Final Presentation</h2>
             </div>
             <div class="col-12">
-                <p>When our project was finally done we held a presentation for our stakeholder, teachers & students. In
-                    this presentation we talked about our journey during this project. We also showed what our game is
+                <p>When our project was finally done we held a presentation for our stakeholder, teachers &
+                    students. In
+                    this presentation we talked about our journey during this project. We also showed what our game
+                    is
                     about, the game phases and how our game is played in general.
                 </p>
                 <embed src="../img/projects/project8/Final Presentation.pdf" type="application/pdf" height="570px;"
@@ -694,8 +773,10 @@
                 <h2>Feedback Stakeholder</h2>
             </div>
             <div class="col-12">
-                <p>Our stakeholder loved our game and was really pleased with the design, As feedback we heard that we
-                    have to polish a few things for example the budget & item prices. Also some outcomes did not fit the
+                <p>Our stakeholder loved our game and was really pleased with the design, As feedback we heard that
+                    we
+                    have to polish a few things for example the budget & item prices. Also some outcomes did not fit
+                    the
                     bought item.</p>
             </div>
         </div>
