@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item ml-5">
-                    <a class="nav-link text-white" href="" id="projectLink">Passion Project - Fishing Game</a>
+                    <a class="nav-link text-white" href="" id="projectLink">Passion Project - Song Guessing Game</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -43,10 +43,10 @@
 
     <div class="project-header-2">
         <div class="text-background-container">
-            <h5>Project 2</h5>
+            <h5>PassionProject</h5>
         </div>
         <h1 class="header-text text-uppercase">
-            Fishing Game
+            Song Guessing Game
         </h1>
     </div>
 
@@ -57,11 +57,312 @@
                 <h2>Introduction<span></span></h2>
             </div>
             <div class="col-12">
-                <p>Here you will find all my side quests. There are projects I did to further show my learning outcomes,
-                    You will also find other things that are not related to the main projects we were tasked with.</p>
+                <p>This is a song guessing game I made to improve my skills in Laravel & Tailwind. I used the Spotify
+                    API to get the songs. The game is a single page application where the user can guess the song by
+                    hearing a part of the song.</p>
             </div>
         </div>
         <!-- Introduction -->
+
+        <!-- Initial Idea -->
+        <div class="row">
+            <div class="col-12" id="initial-idea">
+                <h2>Initial Idea<span></span></h2>
+            </div>
+            <div class="col-12">
+                <p>During the development of my portfolio I thought that my portfolio's project page looks boring, and I
+                    wanted to spice it up more. So, I concepted an idea to make the page more appealing. I wanted to do
+                    this by making a game where the projects are shown in a carrousel that moves. When the user clicks
+                    on a project. A fisherman will cast his rod and catch the project. When the project is caught the
+                    user will be redirected to that project page.</p>
+
+                <h3>Introduction to final idea</h3>
+                <p>During the Career Day at Fontys I approached a company called INDICIA. This company specializes in
+                    making websites using Laravel. When I approached them, I told them more about me and what I want to
+                    do in life. I told them that I want to be a full-stack developer. They were also interested. Because
+                    I want to work in Laravel I first must learn more about Laravel. That is why I want to make
+                    something in Laravel.</p>
+
+                <h3>Final Idea</h3>
+                <p>For the final idea I want to make a song guessing game. Something like 'Hitster'. Using the Spotify
+                    API it is possible to play snippets of songs. The user then can guess the release year, song name &
+                    artists name. Based on what the user got right the user will get points. At the end there will be a
+                    leaderboard with the top ten users.</p>
+                <p>If possible, I also want to add web sockets so that multiple users can play the game at one time
+                    using their smartphones.</p>
+            </div>
+        </div>
+        <!-- Initial Idea -->
+
+        <!-- MoSCoW -->
+        <div class="row">
+            <div class="col-12" id="moscow">
+                <h2>MoSCoW List<span></span></h2>
+            </div>
+            <div class="col-12">
+                <p>In <cite>Figure 1</cite> you can see the MoSCoW list I made. Here you can see all the functions I
+                    want to add.</p>
+            </div>
+            <div class="col-6">
+                <img src="../img/projects/project9/moscow.png" class="img-fluid">
+                <cite>Figure 1 - Devan Janssen</cite>
+            </div>
+        </div>
+        <!-- MoSCoW -->
+
+        <!-- Development -->
+        <div class="row">
+            <div class="col-12" id="development">
+                <h2>Development<span>LO2</span></h2>
+            </div>
+            <div class="col-12">
+                <p>Below you can see everything I did to develop this game.</p>
+            </div>
+        </div>
+
+        <!-- Authentication -->
+        <div class="row">
+            <div class="col-12" id="authentication">
+                <h2>Authentication<span></span></h2>
+            </div>
+            <div class="col-6">
+                <p>I started with the authentication. Using the Spotify Developer Dashboard I added a new project to the
+                    Spotify
+                    Dashboard. In this project I added the Redirect URI and the Client ID. After doing this using the
+                    code that spotify gave me I can add a button to my website where the user gets redirected to the
+                    Spotify login page. When the user logs in, the user will be redirected back to my website and the
+                    user will be logged in. You can see this in <cite>Figure 2</cite>.</p>
+            </div>
+            <div class="col-6">
+                <img src="../img/projects/project9/spotify-auth.png" class="img-fluid">
+                <cite>Figure 2 - Devan Janssen</cite>
+            </div>
+        </div>
+        <!-- Authentication -->
+
+        <!-- Genres -->
+        <div class="row">
+            <div class="col-12" id="genres">
+                <h2>Genres<span></span></h2>
+            </div>
+            <div class="col-12">
+                <p>To make the game more repeatable I added eight different genres. This was by far the most difficult
+                    to make because the Spotify API is outdated when it comes to getting songs. I first tried to ask for
+                    a 30 second preview of all the songs (preview_uri) this did not work so I had to think about a
+                    replacement. I found that it was possible to search by genre and then get the first 100 songs of
+                    that genre. This kind of worked.
+            </div>
+        </div>
+        <!-- Genres -->
+
+        <!-- The Song Guessing Part -->
+        <div class="row">
+            <div class="col-12" id="song-guessing">
+                <h2>The Song Guessing Part<span></span></h2>
+            </div>
+            <div class="col-6">
+                <p>The song guessing part is the most important part of the game. This is where the user can guess the
+                    song by hearing a part of the song. The user has three options to pick from one being corrent and 2
+                    being incorrent.</p>
+
+                <p>The game is based around 10 different rounds. The user can score points based on how quick the
+                    corrent
+                    answer is chosen. There is a timer of 30 seconds that counts down to zero. The maximum points per
+                    round that can be received is sixty. Every second that passed the points goes down by two. After a
+                    choice is selected the user will be redirected to the next song and the points are added to the
+                    total points. When the user finished the game and completes the game the user will see how many
+                    total
+                    points have been earned. You can see this in <cite>Figure 3</cite>.</p>
+            </div>
+            <div class="col-6">
+                <img src="../img/projects/project9/game-itself.png" class="img-fluid">
+                <cite>Figure 3 - Devan Janssen</cite>
+            </div>
+        </div>
+        <!-- The Song Guessing Part -->
+
+        <!-- Usability Testing -->
+        <div class="row">
+            <div class="col-12" id="usability-testing">
+                <h2>Usability Testing<span>LO3</span></h2>
+            </div>
+            <div class="col-12">
+                <p>To ensure the game was user-friendly and enjoyable, I conducted usability testing with five
+                    participants. The testing focused on three main aspects:</p>
+
+                <ul>
+                    <li>Game mechanics and controls</li>
+                    <li>User interface clarity</li>
+                    <li>Overall user experience</li>
+                </ul>
+
+                <h3>Key Findings</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <p>The usability testing revealed several insights:</p>
+                        <ul>
+                            <li>Users found the timer and scoring system intuitive</li>
+                            <li>The genre selection provided bad variety</li>
+                            <li>Some users wanted more visual feedback when selecting answers</li>
+                            <li>Mobile responsiveness needed minor adjustments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Improvements Made</h3>
+                <p>Based on the feedback, I implemented several improvements:</p>
+                <ul>
+                    <li>Added visual feedback animations for correct/incorrect answers</li>
+                    <li>Better genre selection and song variety</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- Usability Testing -->
+
+        <!-- Visual Notification Feedback -->
+        <!-- Better Genre Selection & Song Variety -->
+        <div class="row">
+            <div class="col-6" id="visual-notification-feedback">
+                <h2>Visual Notification Feedback<span></span></h2>
+
+                <p>To make the game more fun and clearer I added a visual notification feedback. When the user clicks on
+                    a
+                    correct answer the user will see a green notification. When the user clicks on an incorrect
+                    answer the user will see a red notification. You can see this in <cite>Figure 4</cite>.</p>
+
+                <img src="../img/projects/project9/animation.gif" class="img-fluid">
+                <cite>Figure 4 - Devan Janssen</cite>
+            </div>
+
+            <div class="col-6" id="better-genre-selection-song-variety">
+                <h3>Better Genre & Song Variety<span></span></h3>
+
+                <p>To improve I looked at different ways of generating the songs for the genres. During the tests I
+                    found that some songs are seen multiple times, and the variety of songs was really bad.</p>
+
+                <p>I found that I can add artists to the genres meaning when a genre is picked I will make a call to the
+                    Spotify API and only ask recognizeable songs from artists that I personally have selected. By doing
+                    it in this way songs wont be shown multiple times. In <cite>Figure 5</cite> you can see how this
+                    works.</p>
+                <img src="../img/projects/project9/genre&song-variety.png" class="img-fluid">
+                <cite>Figure 5 - Devan Janssen</cite>
+            </div>
+        </div>
+        <!-- Visual Notification Feedback -->
+        <!-- Better Genre Selection & Song Variety -->
+
+        <!-- Validation -->
+        <div class="row">
+            <div class="col-12" id="validation">
+                <h2>Validation of feedback<span></span></h2>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <h4>Notification Feedback</h4>
+                        <p>Users indicated they wanted more visual feedback when selecting answers. I implemented this
+                            by:</p>
+                        <ul>
+                            <li>Adding green notifications for correct answers</li>
+                            <li>Adding red notifications for incorrect answers</li>
+                            <li>Creating smooth animations for the notifications</li>
+                        </ul>
+                        <p>As shown in Figure 4, these visuals now provide immediate feedback to users about their
+                            choices.</p>
+                    </div>
+                    <div class="col-6">
+                        <h4>Genre & Song Selection</h4>
+                        <p>The initial testing revealed issues with song variety and repetition. I addressed this by:
+                        </p>
+                        <ul>
+                            <li>Implementing a new artist-based song selection system</li>
+                            <li>Ensuring songs don't repeat within the same game session</li>
+                        </ul>
+                        <p>The improved system, as seen in <cite>Figure 5</cite>, now provides a more diverse song
+                            selection.</p>
+                    </div>
+                </div>
+
+                <h3>Validation Results</h3>
+                <p>After implementing these improvements, I validated the changes with the original users their feedback
+                    was.
+                </p>
+                <ul>
+                    <li><strong>Visual Feedback:</strong> Users now receive clear, feedback on their answers
+                        through colored notifications</li>
+                    <li><strong>Song Variety:</strong> The new genre-based system with curated artists has no more
+                        song repetition and improved variety</li>
+                    <li><strong>User Experience:</strong> The combination of visual feedback and better song selection
+                        has created a more engaging and enjoyable game experience</li>
+                </ul>
+
+                <p>These improvements directly addressed the key issues identified in user testing, resulting in a more
+                    polished and user-friendly game.</p>
+
+                <p>However there was one last big problem. Right now when the artists are selected the API call asks for
+                    all kinds of songs from specific artists. This means that some songs are not part of the genre. This
+                    is a problem because the user will not be able to guess the song.</p>
+            </div>
+        </div>
+        <!-- Validation -->
+
+        <!-- Future Plans -->
+        <div class="row">
+            <div class="col-12" id="future-plans">
+                <h2>Future Plans<span></span></h2>
+            </div>
+            <div class="col-12">
+                <p>Based on the current state of the project and user feedback, I have identified several key areas for
+                    future improvement:</p>
+
+                <div class="row">
+                    <div class="col-6">
+                        <h3>Core Features</h3>
+                        <ul>
+                            <li><strong>Genre & Artist Selection & More Playlists:</strong>
+                                <ul>
+                                    <li>Implement a more accurate genre-artist matching system</li>
+                                    <li>Use artist playlists instead of individual tracks</li>
+                                    <li>Add ability to use user's Spotify playlists</li>
+                                </ul>
+                            </li>
+                            <li><strong>Leaderboard System:</strong>
+                                <ul>
+                                    <li>Add global leaderboard for all players</li>
+                                    <li>Implement weekly and monthly rankings</li>
+                                    <li>Add friend competition system</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <h3>User Experience</h3>
+                        <ul>
+                            <li><strong>Tutorial & Rules:</strong>
+                                <ul>
+                                    <li>Create an interactive tutorial for new players</li>
+                                    <li>Add comprehensive rules page</li>
+                                </ul>
+                            </li>
+                            <li><strong>Multiplayer Features:</strong>
+                                <ul>
+                                    <li>Implement WebSocket functionality for real-time gameplay</li>
+                                    <li>Add couch co-op mode for local multiplayer</li>
+                                    <li>Create party mode for group sessions</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p>These improvements will focus on making the game more engaging, social, and user-friendly while
+                    addressing the current limitations in song selection and gameplay variety.</p>
+            </div>
+        </div>
+        <!-- Future Plans -->
+
+        <!-- Development -->
     </div>
 
     <script>
